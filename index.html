@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-T Nails & Spa</title>
+
+  <meta name="description" content="T-T Nails & Spa in Warrensburg, Missouri. Modern nail salon offering manicures, pedicures, acrylics, gel nails, nail art, and spa services." />
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;
+    }
+
+    body{
+      background:#ffffff;
+      color:#111;
+      line-height:1.6;
+    }
+
+    header{
+      position:fixed;
+      width:100%;
+      top:0;
+      backdrop-filter:blur(12px);
+      background:rgba(255,255,255,0.75);
+      border-bottom:1px solid #eee;
+      z-index:1000;
+    }
+
+    nav{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 20px;
+    }
+
+    .logo{
+      font-size:22px;
+      font-weight:700;
+      letter-spacing:-0.5px;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:25px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#111;
+      font-size:15px;
+    }
+
+    .hero{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(to bottom,#f9f9f9,#ffffff);
+    }
+
+    .hero-content{
+      max-width:850px;
+    }
+
+    .hero h1{
+      font-size:72px;
+      line-height:1;
+      margin-bottom:20px;
+      letter-spacing:-3px;
+    }
+
+    .hero p{
+      font-size:24px;
+      color:#555;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 28px;
+      border-radius:999px;
+      background:#111;
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+      font-size:16px;
+    }
+
+    .btn:hover{
+      opacity:0.85;
+    }
+
+    section{
+      max-width:1200px;
+      margin:auto;
+      padding:120px 20px;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .section-title h2{
+      font-size:48px;
+      margin-bottom:10px;
+      letter-spacing:-2px;
+    }
+
+    .section-title p{
+      color:#666;
+      font-size:20px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#fafafa;
+      border-radius:28px;
+      padding:35px;
+      transition:0.3s;
+      border:1px solid #eee;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      background:white;
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      font-size:24px;
+    }
+
+    .card p{
+      color:#666;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:30px;
+      object-fit:cover;
+    }
+
+    .about-text h2{
+      font-size:50px;
+      margin-bottom:20px;
+      letter-spacing:-2px;
+    }
+
+    .about-text p{
+      color:#666;
+      font-size:18px;
+      margin-bottom:20px;
+    }
+
+    .contact{
+      text-align:center;
+      background:#fafafa;
+      border-radius:40px;
+      padding:80px 20px;
+    }
+
+    .contact h2{
+      font-size:50px;
+      margin-bottom:20px;
+      letter-spacing:-2px;
+    }
+
+    .contact p{
+      font-size:20px;
+      color:#666;
+      margin-bottom:15px;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px 20px;
+      color:#777;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:48px;
+      }
+
+      .hero p{
+        font-size:20px;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
+      .section-title h2,
+      .about-text h2,
+      .contact h2{
+        font-size:38px;
+      }
+
+      .nav-links{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">T-T Nails & Spa</div>
+
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Luxury Nails.<br>Simple Beauty.</h1>
+
+    <p>
+      Modern nail salon experience in Warrensburg, Missouri.
+    </p>
+
+    <a class="btn" href="#contact">
+      Book Appointment
+    </a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-title">
+    <h2>Services</h2>
+    <p>Premium care designed for beauty and comfort.</p>
+  </div>
+
+  <div class="services">
+
+    <div class="card">
+      <h3>Gel Manicure</h3>
+      <p>Long-lasting shine with clean and elegant finishes.</p>
+    </div>
+
+    <div class="card">
+      <h3>Pedicure Spa</h3>
+      <p>Relaxing spa pedicures with massage and hot towels.</p>
+    </div>
+
+    <div class="card">
+      <h3>Acrylic Nails</h3>
+      <p>Custom shapes, styles, and modern nail designs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Nail Art</h3>
+      <p>Minimalist, luxury, and trendy nail art creations.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <div class="about">
+
+    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop" alt="Nail Salon">
+
+    <div class="about-text">
+      <h2>Designed for comfort.</h2>
+
+      <p>
+        T-T Nails & Spa delivers a clean, modern, and relaxing beauty experience.
+      </p>
+
+      <p>
+        Our salon focuses on detail, hygiene, customer care, and beautiful results.
+      </p>
+
+      <a class="btn" href="#contact">
+        Visit Us
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="contact" id="contact">
+
+    <h2>T-T Nails & Spa</h2>
+
+    <p>1125 N. Simpson Dr. Ste L</p>
+    <p>Warrensburg, MO 64093</p>
+
+    <p>(660) 000-0000</p>
+
+    <br>
+
+    <a class="btn" href="tel:16600000000">
+      Call Now
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 T-T Nails & Spa. All rights reserved.
+</footer>
+
+</body>
+</html>
