@@ -171,16 +171,28 @@
     }
 
     .about {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-wrap: wrap;
       gap: 50px;
       align-items: center;
+      justify-content: center;
+    }
+
+    .about img {
+      flex: 1 1 450px;
+      max-width: 550px;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+      max-width: 550px;
     }
 
     .about img {
       width: 100%;
       border-radius: 28px;
       object-fit: cover;
+      display: block;
     }
 
     .about-text h2 {
@@ -258,7 +270,12 @@
       }
 
       .about {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+      }
+
+      .about img,
+      .about-text {
+        max-width: 100%;
       }
 
       .section-title h2,
