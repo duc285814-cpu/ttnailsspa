@@ -1,0 +1,9 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="120" height="120" rx="24" fill="#FFF8F4"/>
+<path d="M36 83C23 73 18 56 25 42C29 54 37 63 50 67C44 73 40 79 36 83Z" fill="#111111"/>
+<path d="M33 77C35 63 42 50 55 40C53 52 46 65 33 77Z" fill="#111111"/>
+<path d="M48 67C58 65 66 59 73 50C68 62 60 71 48 67Z" fill="#111111"/>
+<path d="M57 40C64 34 72 32 82 33C76 41 68 45 57 40Z" fill="#111111"/>
+<path d="M71 43C81 41 91 43 99 48C88 51 79 49 71 43Z" fill="#111111"/>
+<text x="62" y="67" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#111111">TT</text>
+</svg>
