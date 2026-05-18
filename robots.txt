@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://duc285814-cpu.github.io/ttnailsspa/sitemap.xml
