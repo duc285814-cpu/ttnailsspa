@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>T-T Nails & Spa Preview</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 34px;
+      background: #f4eee9;
+      font-family: Arial, sans-serif;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      font-family: Georgia, serif;
+      margin: 0 0 8px;
+      font-size: 34px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #6e6161;
+      margin-bottom: 34px;
+    }
+    .wrap {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 390px;
+      gap: 28px;
+      max-width: 1500px;
+      margin: auto;
+      align-items: start;
+    }
+    .desktop-frame {
+      background: white;
+      border-radius: 22px;
+      box-shadow: 0 25px 70px rgba(0,0,0,.18);
+      overflow: hidden;
+      border: 1px solid #ddd;
+    }
+    .desktop-bar {
+      height: 42px;
+      background: #f6f2f0;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      gap: 8px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #d86b6b;
+    }
+    .dot:nth-child(2) { background: #e5bd4a; }
+    .dot:nth-child(3) { background: #60b96d; }
+    iframe {
+      border: 0;
+      display: block;
+      background: white;
+    }
+    .desktop-frame iframe {
+      width: 100%;
+      height: 1050px;
+    }
+    .phone {
+      width: 390px;
+      background: #111;
+      border-radius: 44px;
+      padding: 13px;
+      box-shadow: 0 25px 70px rgba(0,0,0,.25);
+      position: sticky;
+      top: 20px;
+    }
+    .phone-screen {
+      background: white;
+      border-radius: 34px;
+      overflow: hidden;
+      height: 830px;
+    }
+    .phone-screen iframe {
+      width: 390px;
+      height: 830px;
+    }
+    @media(max-width: 1100px) {
+      .wrap { grid-template-columns: 1fr; }
+      .phone { position: static; margin: auto; }
+    }
+  </style>
+</head>
+<body>
+  <h1>T-T Nails & Spa Website Preview</h1>
+  <div class="subtitle">Full desktop and phone layout preview</div>
+
+  <div class="wrap">
+    <div class="desktop-frame">
+      <div class="desktop-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <iframe src="index.html"></iframe>
+    </div>
+
+    <div class="phone">
+      <div class="phone-screen">
+        <iframe src="index.html"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
