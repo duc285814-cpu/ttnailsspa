@@ -1,12 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>T-T Nails & Spa | Luxury Nail Salon in Warrensburg, MO</title>
+
+<meta name="description" content="Luxury nail salon in Warrensburg, MO offering Gel X, Builder Gel, Acrylics, Dip Powder, Pedicures, Manicures and Nail Art.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#f8f4f1;
+  color:#222;
+  overflow-x:hidden;
+}
+
 /* =========================
-   HEADER LOGO FIX
+HEADER
 ========================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+.navbar{
+  width:min(1200px,92%);
+  margin:auto;
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
 
 .brand{
   display:flex;
   align-items:center;
-  gap:14px;
 }
 
 .brand img{
@@ -17,19 +66,107 @@
   display:block;
 }
 
-/* Mobile logo */
-@media(max-width:768px){
-  .brand img{
-    width:185px;
-    max-height:44px;
-  }
+nav{
+  display:flex;
+  align-items:center;
+  gap:34px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#222;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:.6px;
+  transition:.25s;
+}
+
+nav a:hover{
+  color:#d97b8f;
+}
+
+.call-btn{
+  background:#d97b8f;
+  color:white;
+  padding:14px 22px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 8px 20px rgba(217,123,143,.18);
+  transition:.25s;
+}
+
+.call-btn:hover{
+  transform:translateY(-2px);
 }
 
 /* =========================
-   HERO BACKGROUND FADE FIX
+HERO
 ========================= */
 
+.hero{
+  width:min(1200px,92%);
+  margin:34px auto;
+  border-radius:32px;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:white;
+  box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.hero-left{
+  padding:70px 60px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.hero-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:72px;
+  line-height:1.02;
+  margin-bottom:26px;
+  letter-spacing:-1px;
+}
+
+.hero-title span{
+  color:#d97b8f;
+}
+
+.hero-desc{
+  color:#555;
+  line-height:1.9;
+  margin-bottom:34px;
+  max-width:520px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.primary-btn{
+  background:#d97b8f;
+  color:white;
+  padding:15px 24px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.secondary-btn{
+  border:1px solid #d97b8f;
+  color:#d97b8f;
+  padding:15px 24px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:600;
+}
+
 .hero-right{
+  min-height:650px;
   background:
     linear-gradient(
       90deg,
@@ -39,72 +176,406 @@
       rgba(255,248,244,0.00) 100%
     ),
     url("images/hero-reception.png") center center / cover no-repeat;
-}
 
-/* Slight image enhancement */
-.hero-right{
   filter:saturate(1.02) contrast(1.02);
 }
 
 /* =========================
-   OPTIONAL HEADER POLISH
+SECTION TITLE
 ========================= */
 
-header{
-  backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
+.section-title{
+  text-align:center;
+  margin-bottom:12px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:52px;
 }
 
-.navbar{
-  min-height:78px;
-}
-
-.call-btn{
-  border-radius:14px;
-  font-weight:600;
-  box-shadow:0 6px 18px rgba(219,119,139,.18);
+.section-subtitle{
+  text-align:center;
+  color:#777;
+  margin-bottom:50px;
 }
 
 /* =========================
-   HERO TEXT
+SERVICES
 ========================= */
 
-.hero-title{
-  line-height:1.08;
-  letter-spacing:-1px;
+.services{
+  width:min(1200px,92%);
+  margin:90px auto;
 }
 
-.hero-title span{
-  color:#d97b8f;
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
 }
-
-/* =========================
-   SERVICE CARD POLISH
-========================= */
 
 .service-card{
-  transition:all .28s ease;
+  background:white;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 12px 32px rgba(0,0,0,.05);
+  transition:.28s;
 }
 
 .service-card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 18px 38px rgba(0,0,0,.10);
+  transform:translateY(-6px);
+  box-shadow:0 18px 42px rgba(0,0,0,.10);
+}
+
+.service-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.service-content{
+  padding:24px;
+}
+
+.service-content h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.service-content p{
+  color:#666;
+  line-height:1.7;
+  font-size:14px;
 }
 
 /* =========================
-   GENERAL LUXURY LOOK
+INFO SECTION
 ========================= */
 
-body{
-  background:#f8f4f1;
+.info-section{
+  width:min(1200px,92%);
+  margin:90px auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
 }
 
-section{
-  position:relative;
+.info-card{
+  background:white;
+  border-radius:24px;
+  padding:34px;
+  box-shadow:0 12px 32px rgba(0,0,0,.05);
 }
 
-.container{
+.info-card h3{
+  margin-bottom:20px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:34px;
+}
+
+.info-card p{
+  color:#666;
+  line-height:1.8;
+}
+
+.hours div{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+  background:#d97b8f;
+  color:white;
+  margin-top:100px;
+}
+
+.footer-inner{
   width:min(1200px,92%);
   margin:auto;
+  padding:28px 0;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
 }
+
+footer a{
+  color:white;
+  text-decoration:none;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .hero-right{
+    min-height:480px;
+  }
+
+  .service-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .info-section{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    min-height:72px;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .brand img{
+    width:185px;
+    max-height:44px;
+  }
+
+  .hero{
+    margin-top:20px;
+  }
+
+  .hero-left{
+    padding:44px 28px;
+  }
+
+  .hero-title{
+    font-size:52px;
+  }
+
+  .hero-right{
+    min-height:360px;
+  }
+
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .section-title{
+    font-size:42px;
+  }
+
+}
+
 </style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+
+    <a href="#" class="brand">
+      <img src="images/brand-logo-transparent.png" alt="T-T Nails & Spa">
+    </a>
+
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#services">SERVICES</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <a href="tel:16607472247" class="call-btn">
+      (660) 747-2247
+    </a>
+
+  </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="hero-left">
+
+    <h1 class="hero-title">
+      Beautiful Nails,<br>
+      Timeless <span>Confidence</span>
+    </h1>
+
+    <p class="hero-desc">
+      At T-T Nails & Spa, we combine luxury, hygiene, and professional nail care to bring out the best in you. Relax, unwind, and leave feeling beautiful.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="tel:16607472247" class="primary-btn">
+        Book Appointment
+      </a>
+
+      <a href="#services" class="secondary-btn">
+        View Services
+      </a>
+    </div>
+
+  </div>
+
+  <div class="hero-right"></div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+  <h2 class="section-title">Our Services</h2>
+
+  <p class="section-subtitle">
+    Luxury nail care with premium products and beautiful results.
+  </p>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <img src="images/gel-x-extension.png">
+      <div class="service-content">
+        <h3>Gel X Extension</h3>
+        <p>Lightweight, elegant, and long-lasting extensions with a flawless luxury finish.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/builder-gel-extension.png">
+      <div class="service-content">
+        <h3>Builder Gel</h3>
+        <p>Strong, flexible builder gel extensions for durable natural beauty.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/acrylic-extension.png">
+      <div class="service-content">
+        <h3>Acrylic Extension</h3>
+        <p>Classic acrylic enhancements designed for elegance and durability.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/dip-powder.png">
+      <div class="service-content">
+        <h3>Dip Powder</h3>
+        <p>Healthy, odor-free powder nails with long-lasting shine and strength.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/pedicure.png">
+      <div class="service-content">
+        <h3>Pedicure</h3>
+        <p>Relaxing spa pedicures with exfoliation, massage, and soft beautiful feet.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/manicure.png">
+      <div class="service-content">
+        <h3>Manicure</h3>
+        <p>Beautiful manicures with detailed care and premium polish finishes.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/nail-art.png">
+      <div class="service-content">
+        <h3>Nail Art</h3>
+        <p>Custom nail art designs crafted for elegant and modern styles.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- INFO -->
+
+<section class="info-section">
+
+  <div class="info-card">
+
+    <h3>Business Hours</h3>
+
+    <div class="hours">
+      <div><span>Monday</span><span>10AM - 7PM</span></div>
+      <div><span>Tuesday</span><span>10AM - 7PM</span></div>
+      <div><span>Wednesday</span><span>10AM - 7PM</span></div>
+      <div><span>Thursday</span><span>10AM - 7PM</span></div>
+      <div><span>Friday</span><span>10AM - 7PM</span></div>
+      <div><span>Saturday</span><span>10AM - 7PM</span></div>
+      <div><span>Sunday</span><span>Closed</span></div>
+    </div>
+
+  </div>
+
+  <div class="info-card">
+
+    <h3>Find Us</h3>
+
+    <p>
+      1125 N. Simpson Dr. Ste L<br>
+      Warrensburg, MO 64093
+    </p>
+
+    <br>
+
+    <a class="primary-btn"
+       href="https://www.google.com/maps/dir/?api=1&destination=1125+N+Simpson+Dr+Ste+L+Warrensburg+MO+64093"
+       target="_blank">
+      Get Directions
+    </a>
+
+  </div>
+
+  <div class="info-card">
+
+    <h3>Why Clients Love Us</h3>
+
+    <p>
+      ✨ Luxury salon atmosphere<br><br>
+      ✨ Premium nail products<br><br>
+      ✨ Clean and hygienic environment<br><br>
+      ✨ Professional nail technicians<br><br>
+      ✨ Beautiful, long-lasting results
+    </p>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div>
+      © 2026 T-T Nails & Spa
+    </div>
+
+    <div>
+      <a href="tel:16607472247">(660) 747-2247</a>
+    </div>
+
+    <div>
+      Warrensburg, Missouri
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
